@@ -1,46 +1,22 @@
 import React from "react";
-import PropertySquare from "./PropertySquare";
+import GameSquare from "./GameSquare";
 
-/**
- * 
- BOARD COMPONENTS
+interface Spaces {
+	place: number;
+	type: string;
+}
 
- TODO:
-- 40 Squares
-- Dice Roll
-
- */
-const properties = {
-	title: "London",
-	color: "red",
-	price: 260,
-	place: 1,
-	type: "property",
-};
 const Board: React.FC = () => {
+	const places: Array<Spaces> = Array.from(Array(40));
 	return (
 		<>
 			<div id='board'>
 				<div className='places'>
-					<PropertySquare {...properties} />
-					{/* {properties.map(
-						({
-							title: string,
-							color: string,
-							price: number,
-							place: number,
-							type: string,
-						}) => {
-							<PropertySquare
-								key={title}
-								title={title}
-								color={color}
-								price={price}
-								type={type}
-								place={place}
-							/>;
-						}
-					)} */}
+					{places.map((space, index) => {
+						const id: number = index + 1;
+						return <GameSquare id={id} key={id} />;
+					})}
+					<div className='center'></div>
 				</div>
 			</div>
 		</>
