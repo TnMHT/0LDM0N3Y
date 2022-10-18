@@ -9,6 +9,8 @@ import JailSquare from "./Squares/JailSquare";
 import TaxSquare from "./Squares/TaxSquare";
 import UtilitySquare from "./Squares/UtilitySquare";
 import { SquareConfigData } from "./SquareData";
+import RailroadSquare from "./Squares/RailroadSquare";
+import GoToJailSquare from "./Squares/GoToJailSquare";
 
 interface Props {
 	id: number;
@@ -30,11 +32,17 @@ const SquareDetails: React.FC<Props> = ({ id }) => {
 		if (type === SquareType.FreeParking) {
 			return <FreeParkingSquare id={id} />;
 		}
+		if (type === SquareType.Railroad) {
+			return <RailroadSquare id={id} />;
+		}
 		if (type === SquareType.Tax) {
 			return <TaxSquare id={id} />;
 		}
 		if (type === SquareType.Jail) {
 			return <JailSquare id={id} />;
+		}
+		if (type === SquareType.GoToJail) {
+			return <GoToJailSquare id={id} />;
 		}
 		if (type === SquareType.Utility) {
 			return <UtilitySquare id={id} />;
