@@ -1,5 +1,6 @@
 import React from "react";
 import { PropertyData } from "../BoardData/PropertyData";
+import { colorMap } from "../BoardData/PropertyData";
 
 interface Props {
 	id: number;
