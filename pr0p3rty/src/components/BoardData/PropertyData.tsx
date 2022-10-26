@@ -1,68 +1,25 @@
 interface Data {
 	name: string;
 	color: string;
-	place?: number;
+	place: number;
 	// REMOVE OPTIONALITY LATER
-	ticker?: string;
-	buyPrice?: number;
-	rent?: number;
-	mortgageValue?: number;
-	house1?: number;
-	house2?: number;
-	house3?: number;
-	house4?: number;
-	hotel?: number;
-	houseCost?: number;
-	hotelCost?: number;
+	ticker: string;
+	buyPrice: number;
+	rent: number;
+	mortgageValue: number;
+	house1: number;
+	house2: number;
+	house3: number;
+	house4: number;
+	hotel: number;
+	houseCost: number;
+	hotelCost: number;
 }
-export const colorMap = new Map<number, string>([
-	[1, "BLUE"],
-	[2, "GREEN"],
-	[3, "BABY BLUE"],
-	[4, "YELLOW"],
-	[5, "RED"],
-	[6, "BROWN"],
-	[7, "ORANGE"],
-	[8, "PINK"],
-]);
-
 export const PropertyData = new Map<number, Data>();
-
-// NOT BY ID BUT PLACE ON THE BOARD
-
-// COLOR 1
-PropertyData.set(2, { name: "Bitcoin", color: 1 });
-PropertyData.set(4, { name: "Ethereum", color: 1 });
-// COLOR 2
-PropertyData.set(7, { name: "DogeCoin", color: 2 });
-PropertyData.set(9, { name: "Cardano", color: 2 });
-PropertyData.set(10, { name: "XRP", color: 2 });
-// COLOR 3
-PropertyData.set(12, { name: "Tether", color: 3 });
-PropertyData.set(14, { name: "Solana", color: 3 });
-PropertyData.set(15, { name: "Polygon", color: 3 });
-// COLOR 4
-PropertyData.set(17, { name: "Polkadot", color: 4 });
-PropertyData.set(19, { name: "USD Coin", color: 4 });
-PropertyData.set(20, { name: "Shiba Inu", color: 4 });
-// COLOR 5
-PropertyData.set(22, { name: "Avalanche", color: 5 });
-PropertyData.set(24, { name: "Chainlink", color: 5 });
-PropertyData.set(25, { name: "Bitcoin Cash", color: 5 });
-// COLOR 6
-PropertyData.set(27, { name: "Tezos", color: 6 });
-PropertyData.set(28, { name: "Decentraland", color: 6 });
-PropertyData.set(30, { name: "Theta", color: 6 });
-// COLOR 7
-PropertyData.set(32, { name: "Binance", color: 7 });
-PropertyData.set(33, { name: "Dai", color: 7 });
-PropertyData.set(35, { name: "Uniswap", color: 7 });
-// COLOR 8
-PropertyData.set(38, { name: "Litecoin", color: 8 });
-PropertyData.set(40, { name: "Tron", color: 8 });
 
 const propertyDetails: Data[] = [
 	{
+		place: 2,
 		name: "Bitcoin",
 		color: "BLUE",
 		ticker: "BTC",
@@ -78,6 +35,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 200,
 	},
 	{
+		place: 4,
 		name: "Ethereum",
 		color: "BLUE",
 		ticker: "BTC",
@@ -93,6 +51,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 200,
 	},
 	{
+		place: 7,
 		name: "Dogecoin",
 		color: "GREEN",
 		ticker: "BTC",
@@ -108,6 +67,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 200,
 	},
 	{
+		place: 9,
 		name: "Cardano",
 		color: "GREEN",
 		ticker: "BTC",
@@ -123,6 +83,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 200,
 	},
 	{
+		place: 10,
 		name: "Ripple",
 		color: "GREEN",
 		ticker: "XRP",
@@ -138,6 +99,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 200,
 	},
 	{
+		place: 12,
 		name: "Tether",
 		color: "BABY BLUE",
 		ticker: "BTC",
@@ -153,6 +115,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 50,
 	},
 	{
+		place: 14,
 		name: "Solana",
 		color: "BABY BLUE",
 		ticker: "SOL",
@@ -168,6 +131,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 50,
 	},
 	{
+		place: 15,
 		name: "Polygon",
 		color: "BABY BLUE",
 		ticker: "BTC",
@@ -183,6 +147,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 50,
 	},
 	{
+		place: 17,
 		name: "Polkadot",
 		color: "YELLOW",
 		ticker: "BTC",
@@ -198,6 +163,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 150,
 	},
 	{
+		place: 19,
 		name: "USD Coin",
 		color: "YELLOW",
 		ticker: "BTC",
@@ -213,6 +179,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 150,
 	},
 	{
+		place: 20,
 		name: "Shiba Inu",
 		color: "YELLOW",
 		ticker: "BTC",
@@ -228,6 +195,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 150,
 	},
 	{
+		place: 22,
 		name: "Avalanche",
 		color: "RED",
 		ticker: "BTC",
@@ -243,6 +211,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 150,
 	},
 	{
+		place: 24,
 		name: "Chainlink",
 		color: "RED",
 		ticker: "BTC",
@@ -258,6 +227,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 150,
 	},
 	{
+		place: 25,
 		name: "Bitcoin Cash",
 		color: "RED",
 		ticker: "BTC",
@@ -273,6 +243,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 150,
 	},
 	{
+		place: 27,
 		name: "Tezos",
 		color: "BROWN",
 		ticker: "BTC",
@@ -288,6 +259,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 100,
 	},
 	{
+		place: 28,
 		name: "Decentraland",
 		color: "BROWN",
 		ticker: "BTC",
@@ -303,6 +275,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 100,
 	},
 	{
+		place: 30,
 		name: "Theta",
 		color: "BROWN",
 		ticker: "BTC",
@@ -318,6 +291,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 100,
 	},
 	{
+		place: 32,
 		name: "Binance",
 		color: "ORANGE",
 		ticker: "BTC",
@@ -333,6 +307,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 100,
 	},
 	{
+		place: 33,
 		name: "Dai",
 		color: "ORANGE",
 		ticker: "BTC",
@@ -348,6 +323,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 100,
 	},
 	{
+		place: 35,
 		name: "Uniswap",
 		color: "ORANGE",
 		ticker: "BTC",
@@ -363,6 +339,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 100,
 	},
 	{
+		place: 38,
 		name: "Litecoin",
 		color: "PINK",
 		ticker: "BTC",
@@ -378,6 +355,7 @@ const propertyDetails: Data[] = [
 		hotelCost: 50,
 	},
 	{
+		place: 40,
 		name: "Tron",
 		color: "PINK",
 		ticker: "BTC",
@@ -393,3 +371,8 @@ const propertyDetails: Data[] = [
 		hotelCost: 50,
 	},
 ];
+
+// SETTING PROPERTY DETAILS TO PLACE ON BOARD
+for (let i = 0; i < propertyDetails.length; i++) {
+	PropertyData.set(propertyDetails[i].place, propertyDetails[i]);
+}

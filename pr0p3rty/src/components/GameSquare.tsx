@@ -44,9 +44,11 @@ const GameSquare: React.FC<Square> = ({ id }) => {
 	};
 
 	return (
-		<div className={getSquareClassName()} id={getSquareId()}>
-			<div className={getContainerClassName()}>
-				<SquareDetails id={id} />
+		<div className='container bg-white border border-gray-200 shadow-md hover:bg-gray-100 rounded-xl p-5'>
+			<div className={getSquareClassName()} id={getSquareId()}>
+				<div className={getContainerClassName()}>
+					<SquareDetails id={id} />
+				</div>
 			</div>
 		</div>
 	);

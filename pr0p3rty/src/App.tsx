@@ -6,7 +6,6 @@ import Board from "./components/Board";
 function App() {
 	return (
 		<div className='App'>
-			<h1>PR0P3RTY</h1>
 			<Board />
 		</div>
 	);

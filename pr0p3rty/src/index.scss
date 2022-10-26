@@ -1,4 +1,6 @@
-$black: #080808;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
 	margin: 0 0 0 0;
@@ -20,15 +22,17 @@ code {
 	justify-content: center;
 	align-content: center;
 
-	grid-template-columns: 11vw repeat(9, 8.5vw) 11vw;
-	grid-template-rows: 11vh repeat(9, 8.5vh) 11vh;
+	//LARGER
+	// grid-template-columns: 11vw repeat(9, 8.5vw) 11vw;
+	// grid-template-rows: 11vh repeat(9, 8.5vh) 11vh;
+	// SMALLER
+	grid-template-columns: 9vw repeat(9, 8.5vw) 9vw;
+	grid-template-rows: 10vh repeat(9, 8.5vh) 9vh;
 }
 
 .square {
 	margin: 0;
 	padding: 0;
-	text-align: center;
-	border: 1px solid black;
 }
 
 .square .container {
@@ -157,7 +161,6 @@ code {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	background-color: rebeccapurple;
 }
 .square.RAILROAD .container-top {
 	flex-wrap: nowrap;
