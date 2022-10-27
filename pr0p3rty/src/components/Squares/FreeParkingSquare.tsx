@@ -4,7 +4,11 @@ interface Props {
 	id: number;
 }
 const FreeParkingSquare: React.FC<Props> = ({ id }) => {
-	return <div>FREE PARKING</div>;
+	return (
+		<div>
+			<div className='square-name'>FREE PARKING</div>
+		</div>
+	);
 };
 
 export default FreeParkingSquare;

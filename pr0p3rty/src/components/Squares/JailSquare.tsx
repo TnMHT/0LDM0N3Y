@@ -4,7 +4,11 @@ interface Props {
 	id: number;
 }
 const JailSquare: React.FC<Props> = ({ id }) => {
-	return <div>JAIL</div>;
+	return (
+		<div>
+			<div className='square-name'>JAIL</div>
+		</div>
+	);
 };
 
 export default JailSquare;

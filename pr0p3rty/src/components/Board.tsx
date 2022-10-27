@@ -1,5 +1,7 @@
 import React from "react";
+import Balances from "./Balances";
 import GameSquare from "./GameSquare";
+import Transactions from "./Transactions";
 
 interface Spaces {
 	place: number;
@@ -15,9 +17,10 @@ const Board: React.FC = () => {
 					const id: number = index + 1;
 					return <GameSquare id={id} key={id} />;
 				})}
-				<div className='center-square square'>
-					<div className='center-txt'>
-						<a href=''>CENTER</a>
+				<div className='center-board square'>
+					<div className='center'>
+						<Transactions />
+						<Balances />
 					</div>
 				</div>
 			</div>

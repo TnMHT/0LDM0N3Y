@@ -39,6 +39,7 @@ code {
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
+	margin: 0.2rem;
 }
 
 .square .container-bottom {
@@ -381,7 +382,9 @@ code {
 	flex-basis: auto;
 }
 
-.center-square {
+// CENTER
+
+.center-board {
 	background: #eaeaea;
 	grid-row-start: 2;
 	grid-row-end: 11;
@@ -390,10 +393,20 @@ code {
 
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 }
 
-.center-square .center-txt {
-	font-weight: 1000;
+.center-board .center {
 	width: 100%;
+}
+
+// TRANSACTIONS
+.transactions {
+	padding: 1rem;
+	margin: 1rem;
+}
+
+// BALANCES
+.balances {
+	padding: 1rem;
+	margin: 1rem;
 }

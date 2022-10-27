@@ -5,7 +5,11 @@ interface Props {
 }
 
 const UtilitySquare: React.FC<Props> = ({ id }) => {
-	return <div>UTILITY</div>;
+	return (
+		<div>
+			<div className='square-name'>UTILITY</div>
+		</div>
+	);
 };
 
 export default UtilitySquare;

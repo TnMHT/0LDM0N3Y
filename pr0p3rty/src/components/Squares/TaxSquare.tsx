@@ -5,7 +5,11 @@ interface Props {
 }
 
 const TaxSquare: React.FC<Props> = ({ id }) => {
-	return <div>TAX</div>;
+	return (
+		<div>
+			<div className='square-name'>TAX</div>
+		</div>
+	);
 };
 
 export default TaxSquare;

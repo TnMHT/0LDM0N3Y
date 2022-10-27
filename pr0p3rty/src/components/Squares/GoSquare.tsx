@@ -5,7 +5,11 @@ interface Props {
 }
 
 const GoSquare: React.FC<Props> = ({ id }) => {
-	return <div>GO {id}</div>;
+	return (
+		<div>
+			<div className='square-name'>GO</div>
+		</div>
+	);
 };
 
 export default GoSquare;

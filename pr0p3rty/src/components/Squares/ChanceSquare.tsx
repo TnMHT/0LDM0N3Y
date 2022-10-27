@@ -5,7 +5,11 @@ interface Props {
 }
 
 const ChanceSquare: React.FC<Props> = ({ id }) => {
-	return <div>CHANCE {id}</div>;
+	return (
+		<div className=''>
+			<div className='square-name'>CHANCE</div>
+		</div>
+	);
 };
 
 export default ChanceSquare;
